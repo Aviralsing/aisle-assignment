@@ -1,16 +1,16 @@
-<h1>iOS Example App<br /></>
+<h1>iOS Example App<br /></h1>
 ###Aisle-assignmnet SwiftUI iOS app showcasing three screens for login OTP & Feed<br />
 
-<h1>Built using XCode Version 13.4.1 <br /></>
+<h3>Built using XCode Version 13.4.1 <br /></h3>
 
-<h1>How to run the example?<br /></>
+<h1>How to run the example?<br /></></h1>
 
 $Clone this repo<br />
 $Open shell window and navigate to project folder<br />
 $Run pod install<br />
 $Open aisle-assignment.xcworkspace and run the project on selected device or simulator.<br />
 
-<h1>How was it created?<br /></>
+<h1>How was it created?<br /></h1>
 
 *Open XCode. File->New->Project->Single View App->aisle-assignment<br />
 *Create Podfile with your target name and Particle pods reference (see file)<br />
