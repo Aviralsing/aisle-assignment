@@ -15,13 +15,13 @@ struct MobileOtpHeading: View {
     @State var isActive: Bool = true;
     
     var body: some View {
-            VStack(alignment:.leading){
+        VStack(alignment:.leading){
             
-                
+            
             VStack(alignment:.leading){
-                Text("GET OTP").font(.system( size: 18, weight: .medium))
+                Text("Get OTP").font(.custom("Inter", size: 22))
                 Spacer()
-                Text("Enter Your").font(.system( size: 30, weight: .semibold))
+                Text("Enter Your").font(.custom("Inter", size: 30))
                 Text("Phone Number").font(.system( size: 30, weight: .semibold))
             }.font(.custom("inter", size: 18))
                 .foregroundColor(Color.black).frame(width: 321, height: 102,alignment:.leading).padding(.leading,30)
@@ -40,20 +40,21 @@ struct MobileOtpHeading: View {
                     .disableAutocorrection(true).frame(width: 147, height: 36).overlay(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color(red:76/255,green:76/255,blue: 76/255), lineWidth: 1))
-            }.font(.custom("inter", size: 18)).frame(width: 219, height: 36, alignment: .leading).foregroundColor(Color.black).padding(.leading,30)
+            }.font(.custom("Inter", size: 18)).frame(width: 219, height: 36, alignment: .leading).foregroundColor(Color.black).padding(.leading,30)
             HStack{
                 Button(action: {
+                    
                     DispatchQueue.main.async {
                         authViewModel.requestLogin(mobileNo: "\(countryCode)\(mobile)")
                     }
                 }) {
-                    Text("Continue").foregroundColor(Color.black).font(.custom("inter", size: 14)).background(RoundedRectangle(cornerRadius: 22).fill(Color.yellow).frame(width: 96, height: 40)).padding(EdgeInsets(top: 20, leading: 50, bottom: 0, trailing: 0))
+                    Text("Continue").foregroundColor(Color.black).font(.custom("Inter", size: 14)).background(RoundedRectangle(cornerRadius: 22).fill(Color.yellow).frame(width: 96, height: 40)).padding(EdgeInsets(top: 20, leading: 50, bottom: 0, trailing: 0))
                 }
                 if authViewModel.mobileStatusResponse != nil && (authViewModel.mobileStatusResponse?.status ?? false) {
                     NavigationLink(destination: OtpScreen(mobile: "\(countryCode)\(mobile)"), isActive: $isActive) {}.navigationBarHidden(true).navigationBarBackButtonHidden(true)
                 }
                 
-            }.font(.custom("inter", size: 14))
+            }.font(.custom("Inter", size: 14))
         }.position(x: 190, y: 180).navigationBarHidden(true).navigationBarBackButtonHidden(true)
     }
 }

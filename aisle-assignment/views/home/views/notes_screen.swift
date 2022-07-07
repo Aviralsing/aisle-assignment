@@ -17,19 +17,18 @@ struct NotesScreen: View {
                 Image("pic1").frame(width: 344, height: 344)
                     .cornerRadius(16)
                 VStack(alignment:.leading){
-                    Text("Meena, 23").font(.custom("Gilroy-Black.ttf", size: 22))
+                    Text("Meena, 23").font(.custom("Gilroy-Semibold", size: 22))
                         .foregroundColor(Color.white).fontWeight(Font.Weight.bold)
-                    Text("Tap to review 50+ notes").font(.custom("Gilroy", size: 15))
-                        .foregroundColor(Color.white).fontWeight(Font.Weight.semibold)
+                    Text("Tap to review 50+ notes").foregroundColor(Color.white).fontWeight(Font.Weight.semibold)
                 }.padding()
             }
             HStack(spacing:60){
                 VStack(alignment:.leading){
-                    Text("Intrested In You").font(.system(size: 22, weight: .bold, design: .default)).frame(width: 177)
-                    Text("Premium members can \nview all their likes at once") .font(.custom("Gilroy", size: 15)).foregroundColor(Color(red: 155/255, green: 155/255, blue: 155/255)).frame(width: 180)
+                    Text("Intrested In You").font(.system(size: 22, weight: .bold, design: .default)).padding(.bottom,5)
+                    Text("Premium members can \nview all their likes at once") .font(.custom("Gilroy", size: 15)).foregroundColor(Color(red: 155/255, green: 155/255, blue: 155/255))
                 }.multilineTextAlignment(.leading)
-                Text("Upgrade").font(.custom("inter", size: 15)).background(RoundedRectangle(cornerRadius: 22).fill(Color.yellow).frame(width: 113, height: 50))
-            }.frame(width: 344, height: 61)
+                Text("Upgrade").font(.custom("inter", size: 15)).background(RoundedRectangle(cornerRadius: 22).fill(Color.yellow).frame(width: 113, height: 50)).padding(.bottom,-33)
+            }.frame(width: 293, height: 96)
             HStack{
                 ZStack(alignment: .bottomLeading){
                     Image("pic2")
@@ -47,12 +46,13 @@ struct NotesScreen: View {
                             .foregroundColor(Color.white).fontWeight(Font.Weight.bold)
                     }.padding()
                 }
-            }
+            }.padding(.top,-5)
             
             
             
         }.padding(.bottom,68).navigationBarHidden(true).navigationBarBackButtonHidden(true)
-    }
+    
+}
 }
 
 
