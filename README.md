@@ -1,9 +1,9 @@
-<h1>iOS Example App<br /></h1>
-###Aisle-assignmnet SwiftUI iOS app showcasing three screens for login OTP & Feed<br />
+<h1>aisle-assignment App<br /></h1>
+<h3>Aisle-assignmnet SwiftUI iOS app showcasing three screens for login OTP & Feed<br /></h3>
 
-<h3>Built using XCode Version 13.4.1 <br /></h3>
+<h1>Built using XCode Version 13.4.1 <br /><h1/>
 
-<h1>How to run the example?<br /></></h1>
+<h1>How to run the example?<br /></h1>
 
 $Clone this repo<br />
 $Open shell window and navigate to project folder<br />
