@@ -22,3 +22,4 @@ $Open aisle-assignment.xcworkspace and run the project on selected device or sim
 *Go to project settings->build settings->Objective-C bridging header->type in aisle-assignment.h (or wherever file is located).<br />
 *Create the source code and SwiftUI for your app (see ViewController.swift and ContentView for reference)<br />
 *(CTRL + R)Build and run - works on simulator and device.<br />
+*Gillory fonts has been replaced by Gill Sans since it is paid
