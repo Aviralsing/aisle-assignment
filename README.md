@@ -1,24 +1,24 @@
-##iOS Example App
-###Aisle-assignmnet SwiftUI iOS app showcasing three screens for login OTP & Feed
+##iOS Example App<br />
+###Aisle-assignmnet SwiftUI iOS app showcasing three screens for login OTP & Feed<br />
 
-Built using XCode Version 13.4.1 
+Built using XCode Version 13.4.1 <br />
 
-#How to run the example?
+#How to run the example?<br />
 
-$Clone this repo
-$Open shell window and navigate to project folder
-$Run pod install
-$Open aisle-assignment.xcworkspace and run the project on selected device or simulator.
+$Clone this repo<br />
+$Open shell window and navigate to project folder<br />
+$Run pod install<br />
+$Open aisle-assignment.xcworkspace and run the project on selected device or simulator.<br />
 
-#How was it created?
+#How was it created?<br />
 
-*Open XCode. File->New->Project->Single View App->aisle-assignment
-*Create Podfile with your target name and Particle pods reference (see file)
-*Close XCode Project
-*Open shell window and navigate to the project folder
-*Run pod install (make sure your have latest Cocoapods installed), pods will be installed and new XCode workspace file will be created.
-*in XCode open the new <aisle-assignment>.xcworkspace
-*Add bridging header - see file aisle-assignment.h for reference.
-*Go to project settings->build settings->Objective-C bridging header->type in aisle-assignment.h (or wherever file is located).
-*Create the source code and SwiftUI for your app (see ViewController.swift and ContentView for reference)
-*(CTRL + R)Build and run - works on simulator and device.
+*Open XCode. File->New->Project->Single View App->aisle-assignment<br />
+*Create Podfile with your target name and Particle pods reference (see file)<br />
+*Close XCode Project<br />
+*Open shell window and navigate to the project folder<br />
+*Run pod install (make sure your have latest Cocoapods installed), pods will be installed and new XCode workspace file will be created.<br />
+*in XCode open the new <aisle-assignment>.xcworkspace<br />
+*Add bridging header - see file aisle-assignment.h for reference.<br />
+*Go to project settings->build settings->Objective-C bridging header->type in aisle-assignment.h (or wherever file is located).<br />
+*Create the source code and SwiftUI for your app (see ViewController.swift and ContentView for reference)<br />
+*(CTRL + R)Build and run - works on simulator and device.<br />
